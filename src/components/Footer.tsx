@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-full relative">
         <Image
-          src="/assets/footerimg.jpg"
+          src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1749303676/footerimg_zmrq1x.png"
           alt="Hero"
           width={1000}
           height={1000}

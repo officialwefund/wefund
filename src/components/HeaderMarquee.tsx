@@ -1,13 +1,21 @@
-import UserMarquee from "./UserMarquee"
+import Marquee from "react-fast-marquee";
+import UserMarquee from "./UserMarquee";
 
-const Marquee = () => {
+const CustomMarquee = () => {
     return (
-        <div className="flex items-center  gap-2 p-2 overflow-y-scroll overflow-x-hidden ">
+        <Marquee 
+            speed={50} 
+            pauseOnHover={true}
+            gradient={false}
+            className="py-2"
+        >
             {[1,2,3,4,5,6].map((item) => (
-                <UserMarquee key={item} />
+                <div key={item} className="mx-2">
+                    <UserMarquee />
+                </div>
             ))}
-        </div>
+        </Marquee>
     )
 }
 
-export default Marquee
+export default CustomMarquee;

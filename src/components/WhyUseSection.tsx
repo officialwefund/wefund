@@ -20,11 +20,11 @@ const WhyUseSection = () => {
     return (
         <>
 
-        <div className="w-[1400px] h-screen mx-auto flex flex-col gap-20 items-center  p-8 ">
+        <div className="md:w-[1400px] w-full md:h-screen mx-auto flex flex-col  gap-20 items-center  md:p-8 p-2">
             <h1 className="text-5xl font-bold">Why Use <span>We-Fund?</span></h1>
-            <div className="grid grid-cols-3 gap-8 items-center">
-            <div className="bg-white/10 rounded-2xl w-full h-[500px] "></div>
-            <div className="grid grid-cols-2 gap-8 col-span-2">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-8 items-center ">
+            <div className="bg-white/10 rounded-2xl w-full md:h-[500px] h-[300px] "></div>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 col-span-2">
                 {whyUseData.map((item, index) => (
                     <div key={index} className="flex flex-col gap-4 p-4">
                         <h1 className="text-3xl ">{item.title}</h1>
