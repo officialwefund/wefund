@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const HeroSection = () => {
     return (
-        <div className="w-full h-screen">
+        <div className="w-full h-screen ">
             <div className="w-full h-full relative">
-                <Image src="/assets/hero.jpg" alt="Hero" width={1000} height={1000} className="w-full h-full object-cover" />
+                <Image src="/assets/hero.jpg" alt="Hero" width={1000} height={1000} className="w-full h-full object-cover opacity-10 blur-md" />
                 <div className="px-8 absolute top-0 left-0 bottom-0 right-0 w-full h-full flex items-center gap-20 flex-col">
                     <div className="flex justify-between w-full gap-2 items-center ">
                         <div className="w-24 ">
