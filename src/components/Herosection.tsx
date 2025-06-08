@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ConnectButton } from "./ConnectButton";
 
 const HeroSection = () => {
   return (
@@ -50,6 +51,7 @@ const HeroSection = () => {
                 />{" "}
                 Connect Wallet
               </button>
+              <ConnectButton />
             </div>
           </div>
 

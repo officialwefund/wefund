@@ -1,3 +1,4 @@
 {
-  "/page": "app/page.js"
+  "/memecoin/page": "app/memecoin/page.js",
+  "/(home)/page": "app/(home)/page.js"
 }
