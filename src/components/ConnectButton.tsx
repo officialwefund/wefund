@@ -18,7 +18,7 @@ export const ConnectButton = () => {
     <WalletMultiButton>
       {showModal && (
 
-      <div className="fixed top-0 left-0 right-0 bottom-0 bg-black/20 backdrop-blur-sm z-50 flex items-center justify-center">
+      <div onClick={(e) => { e.stopPropagation(); setShowModal(false)}} className="fixed p-2 top-0 left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center">
 
         <div className="md:w-[600px] w-full   rounded-2xl p-6 flex flex-col gap-4 items-center">
           <h1 className="md:text-4xl text-2xl font-bold">you must have 10,000 tokens of
