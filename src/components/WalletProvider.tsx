@@ -1,4 +1,3 @@
-// components/WalletProvider.tsx
 'use client';
 
 import { FC, useMemo } from 'react';

@@ -12,7 +12,7 @@ const FeatureSection = () => {
 
             
             </div>
-            <div className="md:w-1/2 w-full bg-white/10 rounded-2xl h-[600px]">
+            <div className="md:w-1/2 w-full bg-white/10 rounded-2xl md:h-[600px] h-[400px]">
             <Image
             src="/assets/wefund.png"
             alt="Hero"

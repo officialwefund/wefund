@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full h-[500px] p-8 flex flex-col gap-10 ">
+    <div className="w-full h-[500px] md:p-8 flex flex-col gap-10 ">
       <div className="flex items-center justify-between">
         <Marquee
           speed={50}
@@ -61,7 +61,7 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="flex justify-between w-full gap-2 items-center  absolute bottom-0 ">
+          <div className="flex justify-between py-4 w-full gap-2 items-center  absolute bottom-0 ">
             <div className="md:w-24 w-20 ">
               <Image
                 src="/assets/logo.svg"
