@@ -377,6 +377,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -558,6 +559,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -597,8 +601,8 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
-  .mx-20 {
-    margin-inline: calc(var(--spacing) * 20);
+  .mx-28 {
+    margin-inline: calc(var(--spacing) * 28);
   }
   .mx-auto {
     margin-inline: auto;
@@ -681,6 +685,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -715,8 +722,14 @@
   .bg-\[\#51515175\] {
     background-color: #51515175;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-primary {
     background-color: var(--color-primary);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-white\/10 {
     background-color: color-mix(in srgb, #fff 10%, transparent);
@@ -770,6 +783,9 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
@@ -830,6 +846,18 @@
   }
   .opacity-10 {
     opacity: 10%;
+  }
+  .opacity-30 {
+    opacity: 30%;
+  }
+  .opacity-50 {
+    opacity: 50%;
+  }
+  .opacity-70 {
+    opacity: 70%;
+  }
+  .opacity-80 {
+    opacity: 80%;
   }
   .bg-blend-hard-light {
     background-blend-mode: hard-light;
@@ -1003,6 +1031,19 @@
 body {
   background-color: #000;
   color: white;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D7FE64, #c1f81c);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D7FE64;
 }
 @property --tw-rotate-x {
   syntax: "*";

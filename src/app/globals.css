@@ -4,9 +4,23 @@
   --color-primary: #D7FE64;
 }
 
-
-
 body {
   background-color: #000;
   color: white
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D7FE64, #c1f81c);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D7FE64;
 }

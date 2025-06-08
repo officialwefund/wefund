@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import HeaderMarquee from "@/components/HeaderMarquee";
 import Footer from "@/components/Footer";
 import { SolanaWalletProvider } from "@/components/WalletProvider";
+import Header from "@/components/Header";
+import GlowingCursor from "@/components/GlowingCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SolanaWalletProvider>
-        <HeaderMarquee />
+          <GlowingCursor />
+      <Header />
         {children}
         <Footer />
         </SolanaWalletProvider>
