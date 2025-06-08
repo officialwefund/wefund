@@ -57,8 +57,8 @@ const HeroSection = () => {
               className="md:w-12 md:h-12 w-8 h-8 bg-blend-hard-light object-cover absolute bottom-0 left-0"
             />
           </div>
-          <div className="relative md:w-[1000px] w-full">
-            <div className="md:w-[1000px] md:h-[600px] h-[400px] w-full rounded-2xl bg-white/10 absolute top-0 left-0">
+          <div className="relative md:w-[1200px] w-full">
+            <div className="md:w-[1100px] md:h-[600px] h-[400px] w-full rounded-2xl bg-white/10 absolute top-0 left-0 right-0 mx-auto">
             <Image
             src="/assets/dashboard.png"
             alt="Hero"
