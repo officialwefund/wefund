@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const FeatureSection = () => {
     return (
         <>
@@ -6,11 +8,19 @@ const FeatureSection = () => {
             <p className="md:text-xl text-lg text-white/50">No wallets. | No fees. | No real losses.</p>
             <h1 className="md:text-6xl text-4xl font-bold">What is We-Fund?</h1>
             <p className="md:text-2xl text-lg text-white/50">We-Fund is where the hype meets the sandbox. It&apos;s a fun, fast, and zero-risk way to learn how memecoin markets work — and how to win at them.</p>
-            <button className="border border-primary w-fit text-white py-3 px-6 rounded-full"><span className="text-primary">$$$</span> Get Funded Now <span className="text-primary">$$$</span></button>
+            <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-3 px-6 rounded-full"><span className="text-primary">$$$</span> Get Funded Now <span className="text-primary">$$$</span></button>
 
             
             </div>
-            <div className="md:w-1/2 w-full bg-white/10 rounded-2xl h-[600px]"></div>
+            <div className="md:w-1/2 w-full bg-white/10 rounded-2xl h-[600px]">
+            <Image
+            src="/assets/wefund.png"
+            alt="Hero"
+            width={10000}
+            height={10000}
+            className="w-full h-full object-cover"
+            />
+            </div>
         </div>
         </>
     )

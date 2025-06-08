@@ -56,7 +56,7 @@ const Footer = () => {
               Start Trading With zero-risk, Zero Capital
             </h1>
 
-            <button className="bg-primary w-fit text-black py-3 px-10 text-sm rounded-full">
+            <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer bg-primary w-fit text-black py-3 px-10 text-sm rounded-full">
               Get Started
             </button>
           </div>

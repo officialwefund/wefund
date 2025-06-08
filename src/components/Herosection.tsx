@@ -23,7 +23,7 @@ const HeroSection = () => {
               The paper trading playground for meme traders. Trade. Shill.
               Compete — with demo money.
             </p>
-            <button className="border border-primary w-fit text-white py-3 px-6 rounded-full md:text-base text-[10px]">
+            <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border-2 border-primary w-fit text-white py-3 px-6 rounded-full md:text-base text-[10px]">
               <span className="text-primary">$$$</span> Get Funded Now{" "}
               <span className="text-primary">$$$</span>
             </button>
