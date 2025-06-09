@@ -4,7 +4,6 @@ import "../globals.css";
 import Footer from "@/components/Footer";
 import { SolanaWalletProvider } from "@/components/WalletProvider";
 import Header from "@/components/Header";
-import GlowingCursor from "@/components/GlowingCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +31,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SolanaWalletProvider>
-          <GlowingCursor />
       <Header />
         {children}
         <Footer />
