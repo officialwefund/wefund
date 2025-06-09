@@ -377,7 +377,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-black: #000;
     --color-white: #fff;
@@ -617,9 +616,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-\[340px\] {
-    margin-top: 340px;
-  }
   .flex {
     display: flex;
   }
@@ -638,8 +634,11 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-\[200px\] {
-    height: 200px;
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .h-\[120vh\] {
+    height: 120vh;
   }
   .h-\[250px\] {
     height: 250px;
@@ -647,14 +646,8 @@
   .h-\[300px\] {
     height: 300px;
   }
-  .h-\[400px\] {
-    height: 400px;
-  }
   .h-\[500px\] {
     height: 500px;
-  }
-  .h-\[600px\] {
-    height: 600px;
   }
   .h-fit {
     height: fit-content;
@@ -695,6 +688,9 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -734,6 +730,18 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-ss-\[60px\] {
+    border-start-start-radius: 60px;
+  }
+  .rounded-se-\[60px\] {
+    border-start-end-radius: 60px;
+  }
+  .rounded-ee-\[60px\] {
+    border-end-end-radius: 60px;
+  }
+  .rounded-es-\[60px\] {
+    border-end-start-radius: 60px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -751,12 +759,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-black\/20 {
-    background-color: color-mix(in srgb, #000 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
-    }
-  }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -768,15 +770,6 @@
   }
   .bg-primary {
     background-color: var(--color-primary);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
-  .bg-white\/10 {
-    background-color: color-mix(in srgb, #fff 10%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
   }
   .from-black\/50 {
     --tw-gradient-from: color-mix(in srgb, #000 50%, transparent);
@@ -831,14 +824,14 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
-  .pt-28 {
-    padding-top: calc(var(--spacing) * 28);
-  }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
+  }
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
+  .pt-44 {
+    padding-top: calc(var(--spacing) * 44);
   }
   .text-center {
     text-align: center;
@@ -944,6 +937,26 @@
       }
     }
   }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-150 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 150%;
+        --tw-scale-y: 150%;
+        --tw-scale-z: 150%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:shadow-2xl {
     &:hover {
       @media (hover: hover) {
@@ -992,21 +1005,6 @@
       height: 500px;
     }
   }
-  .md\:h-\[600px\] {
-    @media (width >= 48rem) {
-      height: 600px;
-    }
-  }
-  .md\:h-\[700px\] {
-    @media (width >= 48rem) {
-      height: 700px;
-    }
-  }
-  .md\:h-\[800px\] {
-    @media (width >= 48rem) {
-      height: 800px;
-    }
-  }
   .md\:h-screen {
     @media (width >= 48rem) {
       height: 100vh;
@@ -1042,34 +1040,9 @@
       width: calc(var(--spacing) * 24);
     }
   }
-  .md\:w-\[400px\] {
-    @media (width >= 48rem) {
-      width: 400px;
-    }
-  }
-  .md\:w-\[500px\] {
-    @media (width >= 48rem) {
-      width: 500px;
-    }
-  }
   .md\:w-\[600px\] {
     @media (width >= 48rem) {
       width: 600px;
-    }
-  }
-  .md\:w-\[800px\] {
-    @media (width >= 48rem) {
-      width: 800px;
-    }
-  }
-  .md\:w-\[1000px\] {
-    @media (width >= 48rem) {
-      width: 1000px;
-    }
-  }
-  .md\:w-\[1100px\] {
-    @media (width >= 48rem) {
-      width: 1100px;
     }
   }
   .md\:w-\[1200px\] {
@@ -1085,11 +1058,6 @@
   .md\:w-\[1400px\] {
     @media (width >= 48rem) {
       width: 1400px;
-    }
-  }
-  .md\:w-fit {
-    @media (width >= 48rem) {
-      width: fit-content;
     }
   }
   .md\:grid-cols-2 {
@@ -1117,14 +1085,9 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .md\:px-14 {
+  .md\:py-3 {
     @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 14);
-    }
-  }
-  .md\:py-4 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 4);
+      padding-block: calc(var(--spacing) * 3);
     }
   }
   .md\:text-2xl {
@@ -1155,6 +1118,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .md\:text-sm {

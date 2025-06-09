@@ -1,29 +1,43 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const FeatureSection = () => {
-    return (
-        <>
-        <div className="md:w-[1400px] w-full md:h-screen mx-auto flex md:flex-row flex-col items-center gap-20 md:p-8 p-2 mt-[340px]">
-            <div className="md:w-1/2 w-full flex flex-col gap-6">
-            <p className="md:text-xl text-lg text-white/50">No wallets. | No fees. | No real losses.</p>
-            <h1 className="md:text-6xl text-4xl font-bold">What is We-Fund?</h1>
-            <p className="md:text-2xl text-lg text-white/50">We-Fund is where the hype meets the sandbox. It&apos;s a fun, fast, and zero-risk way to learn how memecoin markets work — and how to win at them.</p>
-            <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-3 px-6 rounded-full"><span className="text-primary">$$$</span> Get Funded Now <span className="text-primary">$$$</span></button>
-
-            
-            </div>
-            <div className="md:w-1/2 w-full bg-white/10 rounded-2xl md:h-[600px] h-[400px]">
-            <Image
-            src="/assets/wefund.png"
-            alt="Hero"
-            width={10000}
-            height={10000}
-            className="w-full h-full object-cover"
-            />
-            </div>
+  return (
+    <>
+      <div className="md:w-[1400px] w-full md:h-screen mx-auto flex md:flex-row flex-col items-center gap-20 md:p-8 p-2 ">
+        <div className="md:w-1/2 w-full flex flex-col gap-6">
+          <p className="md:text-xl text-lg text-white/50">
+            No wallets. | No fees. | No real losses.
+          </p>
+          <h1 className="md:text-6xl text-4xl font-bold">What is We-Fund?</h1>
+          <p className="md:text-2xl text-lg text-white/50">
+            We-Fund is where the hype meets the sandbox. It&apos;s a fun, fast,
+            and zero-risk way to learn how memecoin markets work — and how to
+            win at them.
+          </p>
+          <button className="hover:scale-105 hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-3 px-6 rounded-full">
+            <span className="text-primary">$$$</span> Get Funded Now{" "}
+            <span className="text-primary">$$$</span>
+          </button>
         </div>
-        </>
-    )
-}
+        <div className="md:w-1/2 w-full grid grid-cols-3 gap-2 ">
+          {["/assets/i1.png", "/assets/i2.png", "/assets/i3.png", "/assets/i4.png", "/assets/i5.png", "/assets/i6.png", "/assets/i7.png", "/assets/i8.png", "/assets/i9.png"].map(
+            (item, index) => {
+              return (
+                <Image
+                  key={index}
+                  src={item}
+                  alt="Hero"
+                  width={10000}
+                  height={10000}
+                  className={`${index === 0 ? "rounded-ss-[60px]" : ""} ${index === 2 ? "rounded-se-[60px]" : ""} ${index === 6 ? "rounded-es-[60px]" : ""} ${index === 8 ? "rounded-ee-[60px]" : ""} w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer`}
+                />
+              );
+            }
+          )}
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default FeatureSection
+export default FeatureSection;

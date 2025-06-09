@@ -3,7 +3,7 @@ import { ConnectButton } from "./ConnectButton"
 
 const Header = () => {
     return (
-        <div className="md:py-4 p-2 bg-black absolute top-0 left-0 right-0 z-10 ">
+        <div className="md:py-3 p-2 bg-black absolute top-0 left-0 right-0 z-10 ">
             <div className=" md:w-[1300px] mx-auto flex justify-between w-full gap-2 items-center ">
                         <div className="md:w-24 w-20 ">
                           <Image

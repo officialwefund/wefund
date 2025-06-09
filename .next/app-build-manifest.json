@@ -1,15 +1,5 @@
 {
   "pages": {
-    "/memecoin/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/memecoin/layout.js"
-    ],
-    "/memecoin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/memecoin/page.js"
-    ],
     "/(home)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

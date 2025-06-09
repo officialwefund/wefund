@@ -51,12 +51,12 @@ const Footer = () => {
         />
         <div className="w-full h-full absolute top-0 left-0 right-0 bottom-0 gradient-to-b from-black/50 to-black/10"></div>
         <div className=" absolute top-0 left-0 bottom-0 right-0 w-full h-full flex flex-col justify-center items-center">
-          <div className="md:w-4/6 w-full flex flex-col gap-4 items-center relative">
+          <div className="md:w-4/6 w-full flex flex-col gap-8 items-center relative">
             <h1 className="md:text-6xl text-4xl text-center">
-              Start Trading With zero-risk, Zero Capital
+              Start Trading With <br /> zero-risk, Zero Capital
             </h1>
 
-            <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer bg-primary w-fit text-black py-3 px-10 text-sm rounded-full">
+            <button className="hover:scale-105 hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer bg-primary w-fit text-black py-3 px-10 text-sm md:text-lg rounded-full">
               Get Started
             </button>
           </div>

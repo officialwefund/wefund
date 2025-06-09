@@ -30,13 +30,13 @@ const WhyUseSection = () => {
           Why Use <span className="text-primary relative"> We-Fund? <Image src="/assets/line.png" alt="Logo" width={1000} height={1000} className="w-full absolute -bottom-3 left-0" /> </span>
         </h1>
         <div className="flex md:flex-row flex-col-reverse gap-8  items-center ">
-          <div className="bg-white/10 rounded-2xl w-full md:h-[500px] h-[300px] ">
+          <div className=" w-full md:h-[500px] h-[300px] ">
           <Image
           src="/assets/wefund2.png"
           alt="Hero"
           width={10000}
           height={10000}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain hover:scale-110 transition-all duration-300 cursor-pointer "
           />
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 col-span-2">
