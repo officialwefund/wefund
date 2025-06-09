@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full h-[1300px] ">
-      {connected ? (
+      {
         showModal && (
           <div
             onClick={(e) => {
@@ -21,24 +21,41 @@ const HeroSection = () => {
             className="fixed p-2 top-0 left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center"
           >
             <div className="md:w-[600px] w-full   rounded-2xl p-6 flex flex-col gap-4 items-center">
-              <h1 className="md:text-4xl text-2xl font-bold">
+              {connected ? (
+                <>
+                <h1 className="md:text-4xl text-2xl font-bold">
                 you must have 10,000 tokens of
                 <span className="text-primary"> $Wefund</span> in order to gain
                 access
               </h1>
-              <div className="w-full h-[250px] bg-[#2f2f2f] rounded-2xl flex items-center justify-center">
-                <h1 className="text-white/50 text-2xl">Token Image</h1>
+              <div className="w-full h-[250px] rounded-2xl flex items-center justify-center">
+                <Image
+                src="/assets/wefund22.png"
+                alt="Hero"
+                width={10000}
+                height={10000}
+                className="w-full h-full object-contain"
+                />
               </div>
-              <button className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-2 px-20 rounded-full h-fit">
+              <button onClick={() => setShowModal(false)} className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-2 px-20 rounded-full h-fit">
                 {" "}
                 Buy Token{" "}
               </button>
+                </>
+              ) : (
+                <>
+                <h1 className="md:text-4xl text-2xl font-bold">
+               Connect Wallet
+              </h1>
+              <button onClick={() => setShowModal(false)} className="hover:shadow-2xl transition-all duration-300 shadow-primary cursor-pointer border border-primary w-fit text-white py-2 px-20 rounded-full h-fit">
+                Cancel
+              </button>
+                </>
+              )}
             </div>
           </div>
         )
-      ) : (
-        <></>
-      )}
+      }
 
         <Image
           src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1749303485/hero_wwv47p.jpg"
@@ -55,7 +72,7 @@ const HeroSection = () => {
             </h1>
             <p className="md:w-4/6 mx-auto text-center text-white/50 md:text-xl text-md">
               The paper trading playground for meme traders. Trade. Shill.
-              Compete — with demo money.
+              Compete with demo money.
             </p>
             <button
               onClick={() => setShowModal(true)}
@@ -96,7 +113,7 @@ const HeroSection = () => {
           </div>
           <div className="relative md:w-[1200px] w-full ">
             <Image
-              src="/assets/dashboard.png"
+              src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1749503259/wefundbg_jh1pbv.png"
               alt="Hero"
               width={10000}
               height={10000}

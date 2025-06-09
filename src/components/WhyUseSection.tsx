@@ -5,12 +5,12 @@ const WhyUseSection = () => {
     {
       title: "Risk-Free Degening",
       description:
-        "Practice trading in real-time market conditions — no actual losses, just the emotional ones.",
+        "Practice trading in real-time market conditions no actual losses, just the emotional ones.",
     },
     {
       title: "Learn by Doing",
       description:
-        "Understand how price movements, volume, and hype affect trades — without getting rekt for real.",
+        "Understand how price movements, volume, and hype affect trades without getting rekt for real.",
     },
     {
       title: "Meme-Focused Markets",

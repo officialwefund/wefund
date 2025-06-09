@@ -7,7 +7,7 @@ const Header = () => {
             <div className=" md:w-[1300px] mx-auto flex justify-between w-full gap-2 items-center ">
                         <div className="md:w-24 w-20 ">
                           <Image
-                            src="/assets/logo.svg"
+                            src="/assets/logonew.svg"
                             alt="Logo"
                             width={1000}
                             height={1000}
@@ -22,14 +22,14 @@ const Header = () => {
                               height={1000}
                               className="md:w-6 md:h-6 w-4 h-4"
                             />
-                            <p className="text-white/50">|</p>
+                            {/* <p className="text-white/50">|</p>
                             <Image
                               src="/assets/telegram.svg"
                               alt="Telegram"
                               width={1000}
                               height={1000}
                               className="md:w-6 md:h-6 w-4 h-4"
-                            />
+                            /> */}
                           </div>
                          
                           <ConnectButton />
