@@ -10,7 +10,7 @@ const HeroSection = () => {
   const { connected } = useWallet();
 
   return (
-    <div className="w-full h-[120vh]">
+    <div className="w-full h-[1300px] ">
       {connected ? (
         showModal && (
           <div
