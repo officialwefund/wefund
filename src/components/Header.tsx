@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ConnectButton } from "./ConnectButton"
+import Link from "next/link"
 
 const Header = () => {
     return (
@@ -15,6 +16,7 @@ const Header = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <div className="flex items-center gap-2">
+                            <Link href="https://x.com/WeFundSOL">
                             <Image
                               src="/assets/x.svg"
                               alt="X"
@@ -22,6 +24,7 @@ const Header = () => {
                               height={1000}
                               className="md:w-6 md:h-6 w-4 h-4"
                             />
+                            </Link>
                             {/* <p className="text-white/50">|</p>
                             <Image
                               src="/assets/telegram.svg"
